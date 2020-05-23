@@ -1,0 +1,5 @@
+﻿  Ford_Falkerson.cpp
+  Graph.cpp
+  Создание кода...
+c:\users\lenovo\source\repos\ford_falk\ford_falk\graph.cpp(180): warning C4715: Graph::create_way: значение возвращается не при всех путях выполнения
+  Ford_Falk.vcxproj -> C:\Users\LENOVO\source\repos\Ford_Falk\Debug\Ford_Falk.exe

@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  unittest1.cpp
+c:\users\lenovo\source\repos\ford_falk\ford_falk\graph.cpp(180): warning C4715: Graph::create_way: значение возвращается не при всех путях выполнения
+     Создается библиотека C:\Users\LENOVO\source\repos\Ford_Falk\Debug\Tests.lib и объект C:\Users\LENOVO\source\repos\Ford_Falk\Debug\Tests.exp
+  Tests.vcxproj -> C:\Users\LENOVO\source\repos\Ford_Falk\Debug\Tests.dll

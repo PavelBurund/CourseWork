@@ -1,0 +1,14 @@
+S A 21
+S H 17
+S K 14
+S H 22
+A L 12
+A M 3
+H M 22
+A R 4
+K C 10
+C T 18
+K R 23
+M Q 19
+R Q 9
+L T 18
