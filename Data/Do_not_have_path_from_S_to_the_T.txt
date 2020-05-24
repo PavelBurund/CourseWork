@@ -3,6 +3,5 @@ S B 16
 A K 21
 B M 19
 K L 44
-M L 22
-L T 33
-K T 14
+R X 22
+X T 33

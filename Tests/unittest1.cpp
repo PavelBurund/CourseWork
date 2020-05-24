@@ -47,7 +47,6 @@ namespace Test
 				Graph exp;
 
 				exp.take_file("C:/Users/LENOVO/source/repos/Ford_Falk/Ford_Falk/loop_.txt");
-
 			}
 			catch (const invalid_argument error)
 			{
@@ -62,7 +61,6 @@ namespace Test
 				Graph exp;
 
 				exp.take_file("C:/Users/LENOVO/source/repos/Ford_Falk/Ford_Falk/Do_not_have_S.txt");
-
 			}
 			catch (const logic_error error)
 			{
@@ -77,7 +75,6 @@ namespace Test
 				Graph exp;
 
 				exp.take_file("C:/Users/LENOVO/source/repos/Ford_Falk/Ford_Falk/Do_not_have_T.txt");
-
 			}
 			catch (const logic_error error)
 			{
@@ -92,7 +89,6 @@ namespace Test
 				Graph exp;
 
 				exp.take_file("C:/Users/LENOVO/source/repos/Ford_Falk/Ford_Falk/Way_in_S.txt");
-
 			}
 			catch (const invalid_argument error)
 			{
@@ -107,7 +103,6 @@ namespace Test
 				Graph exp;
 
 				exp.take_file("C:/Users/LENOVO/source/repos/Ford_Falk/Ford_Falk/Way_from_T.txt");
-
 			}
 			catch (const invalid_argument error)
 			{
@@ -122,11 +117,24 @@ namespace Test
 				Graph exp;
 
 				exp.take_file("C:/Users/LENOVO/source/repos/Ford_Falk/Ford_Falk/really_way.txt");
-
 			}
 			catch (const invalid_argument error)
 			{
 				Assert::AreEqual("Тут никакой ошибки нет!!", error.what());
+			}
+		}
+
+		TEST_METHOD(Do_not_have_path_from_S_to_the_T)
+		{
+			try
+			{
+				Graph exp;
+
+				exp.take_file("C:/Users/LENOVO/source/repos/Ford_Falk/Ford_Falk/Do_not_have_path_from_S_to_the_T.txt");
+			}
+			catch (const invalid_argument error)
+			{
+				Assert::AreEqual("Нет связи между истоком и стоком", error.what());
 			}
 		}
 	};

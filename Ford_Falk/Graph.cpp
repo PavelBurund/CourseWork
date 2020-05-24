@@ -106,7 +106,7 @@ int Graph::counting_flow()
 	int max_bandwidth;
 	int start_index = 0;
 
-	int MAX_FLOW = 0;
+	int MAX_FLOW = INT_MIN;
 	do {
 		find_any_way:
 			max_index = INT_MIN;
@@ -133,7 +133,8 @@ int Graph::counting_flow()
 
 		
 	} while (max_index != INT_MIN);
-
+	if (MAX_FLOW == INT_MIN)
+		throw invalid_argument("Нет связи между истоком и стоком");
 	return MAX_FLOW;
 }
 
@@ -213,6 +214,9 @@ bool Graph::update_flow(int* MAX_FLOW)
 
 		prev_index = indexes[i];
 	}
+
+	if (min_bandwidth > 0 && *MAX_FLOW == INT_MIN)
+		*MAX_FLOW = 0;
 
 	*MAX_FLOW = *MAX_FLOW + min_bandwidth;
 
